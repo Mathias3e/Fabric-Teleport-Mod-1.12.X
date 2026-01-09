@@ -30,7 +30,10 @@
   "tooltip.teleportmod.teleporter.shift_down.line4": "",
   "tooltip.teleportmod.teleporter.shift_down.line5": "§6Cost:",
   "tooltip.teleportmod.teleporter.shift_down.line6": "§e1 Energy Orb",
-  "tooltip.teleportmod.teleporter.shift_down.line7": "§7per §e%s Blocks",
+  "tooltip.teleportmod.teleporter.shift_down.line7": "§7per %s §eBlocks",
+  "tooltip.teleportmod.teleporter.shift_down.line8": "",
+  "tooltip.teleportmod.teleporter.shift_down.line9": "§6Tier:",
+  "tooltip.teleportmod.teleporter.shift_down.line10": "§7Teleport Crystal §eTier %s",
   "tooltip.teleportmod.teleporter": "Press §eShift§r for more Information",
 
   "teleportmod.advancement.root.title": "Teleport",
@@ -47,6 +50,9 @@
   "teleportmod.advancement.first_teleport.description": "Use a Teleporter to teleport for the first time",
   "teleportmod.advancement.materialized_inside.title": "Teleporting Problem",
   "teleportmod.advancement.materialized_inside.description": "Materialise inside a wall",
+
+  "tag.item.teleportmod.energy_scours_items": "Energy Source",
+  "tag.item.teleportmod.teleport_crystal_items": "Teleport Crystals",
 
   "death.attack.teleport_collision": "%1$s materialised inside a block",
   "death.attack.teleport_collision.player": "%1$s materialised inside a block whilst trying to escape %2$s"

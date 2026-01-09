@@ -39,7 +39,7 @@ public class TeleporterScreen extends HandledScreen<TeleporterScreenHandler> {
         if (!(stack.getItem() instanceof net.mathias.teleportmod.item.custom.TeleporterItem)) {
             stack = this.client.player.getOffHandStack();
         }
-        return stack.getOrDefault(ModDataComponentTypes.ENERGY_EFFICIENCY, 30.0f);
+        return stack.getOrDefault(ModDataComponentTypes.BLOCK_AMOUNT_PER_ONE_ENERGY_ORB, 30.0f);
     }
 
     @Override
@@ -154,6 +154,8 @@ public class TeleporterScreen extends HandledScreen<TeleporterScreenHandler> {
                 double energy = dist/30; //replace 30 with nbt value
 
                 ClientPlayNetworking.send(new TeleportPayload(x, y, z, (int) Math.round(energy)));
+
+                //TODO: Play sound here
 
                 this.close();
 

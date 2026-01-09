@@ -105,7 +105,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         // ----------------------------------------------------------------------------------------------- //
 
         NbtShapedRecipeBuilder.create(RecipeCategory.MISC, teleporterItem)
-                .component(ModDataComponentTypes.ENERGY_EFFICIENCY, 30.0f)
+                .component(ModDataComponentTypes.BLOCK_AMOUNT_PER_ONE_ENERGY_ORB, 30.0f)
                 .pattern("  N")
                 .pattern("CKC")
                 .pattern("CRC")
@@ -120,7 +120,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter, Identifier.of("teleportmod", "teleporter_30"));
 
         NbtShapedRecipeBuilder.create(RecipeCategory.MISC, teleporterItem)
-                .component(ModDataComponentTypes.ENERGY_EFFICIENCY, 60.0f)
+                .component(ModDataComponentTypes.BLOCK_AMOUNT_PER_ONE_ENERGY_ORB, 60.0f)
                 .pattern("  N")
                 .pattern("CKC")
                 .pattern("CRC")
@@ -135,7 +135,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter, Identifier.of("teleportmod", "teleporter_60"));
 
         NbtShapedRecipeBuilder.create(RecipeCategory.MISC, teleporterItem)
-                .component(ModDataComponentTypes.ENERGY_EFFICIENCY, 120.0f)
+                .component(ModDataComponentTypes.BLOCK_AMOUNT_PER_ONE_ENERGY_ORB, 120.0f)
                 .pattern("  N")
                 .pattern("CKC")
                 .pattern("CRC")
@@ -150,7 +150,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter, Identifier.of("teleportmod", "teleporter_120"));
 
         NbtShapedRecipeBuilder.create(RecipeCategory.MISC, teleporterItem)
-                .component(ModDataComponentTypes.ENERGY_EFFICIENCY, 240.0f)
+                .component(ModDataComponentTypes.BLOCK_AMOUNT_PER_ONE_ENERGY_ORB, 240.0f)
                 .pattern("  N")
                 .pattern("CKC")
                 .pattern("CRC")

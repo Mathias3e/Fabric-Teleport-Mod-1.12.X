@@ -1,8 +1,8 @@
-// 1.21	2026-01-09T16:47:30.2150003	Teleport Mod/Model Definitions
+// 1.21	2026-01-09T22:06:31.764027	Teleport Mod/Model Definitions
 0b73eccc8ee5c1d139301dc889712355aa6f91c5 assets\teleportmod\blockstates\energy_ore.json
 ca6280f369ce6399be0e3287db1fab9e35105d2d assets\teleportmod\models\item\teleport_crystal_tier_2.json
-947c904f9f82025893fe5953e2d82451dae813ac assets\teleportmod\models\item\teleport_crystal_tier_4.json
 35b1d739c559b68e5d68dd0a614cc3633402c8a6 assets\teleportmod\models\block\energy_ore.json
+947c904f9f82025893fe5953e2d82451dae813ac assets\teleportmod\models\item\teleport_crystal_tier_4.json
 bf69f86d8c6377b825c0ef1b0cc5cfa88697c884 assets\teleportmod\models\item\energy_ore.json
 fe9019e0dd382a4e4b130908a46db820967ead66 assets\teleportmod\models\item\teleporter.json
 9a84f9cb5b205880d4755334b2231523035d2cda assets\teleportmod\models\item\teleport_crystal_tier_1.json

@@ -10,6 +10,8 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.advancement.AdvancementEntry;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 
@@ -50,6 +52,12 @@ public class ModMessages {
                         payload.z() + 0.5,
                         player.getYaw(),
                         player.getPitch()
+                );
+                player.playSoundToPlayer(
+                        SoundEvents.ENTITY_ENDERMAN_TELEPORT,
+                        SoundCategory.PLAYERS,
+                        1.0f,
+                        1.0f
                 );
                 if (player.getServer() != null) {
                     AdvancementEntry entry = player.getServer().getAdvancementLoader().get(first_teleport_id);

@@ -8,6 +8,7 @@ import net.mathias.teleportmod.item.ModItemGroups;
 import net.mathias.teleportmod.item.ModItems;
 import net.mathias.teleportmod.networking.ModMessages;
 import net.mathias.teleportmod.screen.ModScreenHandlers;
+import net.mathias.teleportmod.util.ModLootTableModifiers;
 import net.mathias.teleportmod.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,5 +31,7 @@ public class TeleportMod implements ModInitializer {
         ModWorldGeneration.generateModWorldGen();
 
         ModDataComponentTypes.registerDataComponentTypes();
+
+        ModLootTableModifiers.modifyLootTables();
 	}
 }

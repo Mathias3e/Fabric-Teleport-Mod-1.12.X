@@ -11,7 +11,7 @@ import net.minecraft.util.Identifier;
 import java.util.function.UnaryOperator;
 
 public class ModDataComponentTypes {
-    public static final ComponentType<Float> ENERGY_EFFICIENCY = register("energy_efficiency", builder -> builder
+    public static final ComponentType<Float> BLOCK_AMOUNT_PER_ONE_ENERGY_ORB = register("block_amount_per_one_energy_orb", builder -> builder
             .codec(Codec.FLOAT)
             .packetCodec(PacketCodecs.FLOAT));
 
