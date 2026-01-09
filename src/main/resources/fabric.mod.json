@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "teleportmod",
+	"version": "${version}",
+	"name": "Teleport Mod",
+	"description": "This mod makes it easier and more accurate for players to teleport, through their Minecraft World.",
+	"authors": [
+		"Climb3er"
+	],
+	"contact": {
+        "homepage": "https://fabricmc.net/",
+        "sources": "https://github.com/Mathias3e/Fabric_Teleport_Mod_1.20X"
+	},
+	"license": "MIT",
+	"icon": "assets/teleportmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mathias.teleportmod.TeleportMod"
+		],
+		"fabric-datagen": [
+			"net.mathias.teleportmod.TeleportModDataGenerator"
+		],
+        "client": [
+          "net.mathias.teleportmod.TeleportModClient"
+        ]
+	},
+	"mixins": [
+		"teleportmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

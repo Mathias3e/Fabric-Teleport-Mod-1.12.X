@@ -1,0 +1,27 @@
+{
+  "parent": "teleportmod:teleport/root",
+  "criteria": {
+    "first_teleport": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "teleportmod.advancement.first_teleport.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "teleportmod:teleport_crystal"
+    },
+    "title": {
+      "translate": "teleportmod.advancement.first_teleport.title"
+    }
+  },
+  "requirements": [
+    [
+      "first_teleport"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

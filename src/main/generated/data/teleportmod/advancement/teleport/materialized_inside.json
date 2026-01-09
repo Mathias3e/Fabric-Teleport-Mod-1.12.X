@@ -1,0 +1,27 @@
+{
+  "parent": "teleportmod:teleport/root",
+  "criteria": {
+    "materialized_inside": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "teleportmod.advancement.materialized_inside.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "teleportmod:teleport_crystal"
+    },
+    "title": {
+      "translate": "teleportmod.advancement.materialized_inside.title"
+    }
+  },
+  "requirements": [
+    [
+      "materialized_inside"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

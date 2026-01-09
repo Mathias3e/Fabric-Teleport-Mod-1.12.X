@@ -1,0 +1,41 @@
+{
+  "item.teleportmod.teleport_crystal": "Teleport Crystal",
+  "item.teleportmod.energy_orb": "Energy Orb",
+
+  "item.teleportmod.teleporter": "Teleporter",
+
+  "block.teleportmod.energy_ore": "Energy Ore",
+
+  "itemgroup.teleportmod.teleport_items": "Teleport Items",
+
+  "gui.teleportmod.teleporter.name": "Teleporter",
+  "gui.teleportmod.teleporter.coords.placeholder": "Coords:",
+  "gui.teleportmod.teleporter.coords.name": "Coords",
+  "gui.teleportmod.teleporter.button.text": "Teleport",
+
+  "gui.teleportmod.teleporter.info.dist.empty": "Needs X, Y, Z",
+  "gui.teleportmod.teleporter.info.energy.empty": "Energy:",
+  "gui.teleportmod.teleporter.info.dist.invalid": "Not a valid Input",
+  "gui.teleportmod.teleporter.info.dist": "Distance: %s Bl.",
+  "gui.teleportmod.teleporter.info.energy": "Energy: %s Orbs",
+  "gui.teleportmod.teleporter.info.dist.low_energy": "Not enough Orbs",
+
+  "tooltip.teleportmod.teleporter.shift_down.line1": "§6Ability:",
+  "tooltip.teleportmod.teleporter.shift_down.line2": "§eTeleports§7 the player to",
+  "tooltip.teleportmod.teleporter.shift_down.line3": "§7specific coordinates",
+  "tooltip.teleportmod.teleporter.shift_down.line4": "",
+  "tooltip.teleportmod.teleporter.shift_down.line5": "§6Cost:",
+  "tooltip.teleportmod.teleporter.shift_down.line6": "§e1 Energy Orb",
+  "tooltip.teleportmod.teleporter.shift_down.line7": "§7per §e30 Blocks",
+  "tooltip.teleportmod.teleporter": "Press §eShift§r for more Information",
+
+  "teleportmod.advancement.root.title": "Teleport",
+  "teleportmod.advancement.root.description": "A way to travel and explore precisely",
+  "teleportmod.advancement.first_teleport.title": "First Teleport",
+  "teleportmod.advancement.first_teleport.description": "Use a Teleporter to teleport for the first time",
+  "teleportmod.advancement.materialized_inside.title": "Teleporting Problem",
+  "teleportmod.advancement.materialized_inside.description": "Materialise inside a wall",
+
+  "death.attack.teleport_collision": "%1$s materialised inside a wall",
+  "death.attack.teleport_collision.player": "%1$s materialised inside a wall whilst trying to escape %2$s"
+}

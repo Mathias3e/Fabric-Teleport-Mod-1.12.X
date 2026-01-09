@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "teleportmod:block/energy_ore"
+    }
+  }
+}

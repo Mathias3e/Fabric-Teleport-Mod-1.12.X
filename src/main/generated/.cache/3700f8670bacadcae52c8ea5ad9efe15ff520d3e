@@ -1,0 +1,5 @@
+// 1.21	2026-01-09T10:12:01.3700812	Teleport Mod/Recipes
+1ad6b3bf4acc28f19abc505aaaed01754709b886 data\teleportmod\advancement\recipes\misc\teleport_crystal.json
+63eb1cf0bc996f452bd93cdef63c8bd70371babb data\teleportmod\recipe\teleport_crystal.json
+326b78a4a9205ead966adf2f0ffa7b7368fa0184 data\teleportmod\recipe\teleporter.json
+c6514798edcae696359d34952d96073d8e2c9b6a data\teleportmod\advancement\recipes\misc\teleporter.json

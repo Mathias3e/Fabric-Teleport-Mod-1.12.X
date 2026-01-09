@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": "teleportmod:teleporter"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/block/netherite_block.png",
+    "description": {
+      "translate": "teleportmod.advancement.root.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "teleportmod:teleporter"
+    },
+    "title": {
+      "translate": "teleportmod.advancement.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
