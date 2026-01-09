@@ -17,5 +17,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ModTags.Items.ENERGY_SCOURS_ITEMS)
                 .add(ModItems.ENERGY_ORB);
+
+        getOrCreateTagBuilder(ModTags.Items.TELEPORT_CRYSTAL_ITEMS)
+                .add(ModItems.TELEPORT_CRYSTAL_TIER_1)
+                .add(ModItems.TELEPORT_CRYSTAL_TIER_2)
+                .add(ModItems.TELEPORT_CRYSTAL_TIER_3)
+                .add(ModItems.TELEPORT_CRYSTAL_TIER_4);
     }
 }

@@ -16,6 +16,7 @@ public class ModTags {
 
     public static class Items {
         public static final TagKey<Item> ENERGY_SCOURS_ITEMS = createTag("energy_scours_items");
+        public static final TagKey<Item> TELEPORT_CRYSTAL_ITEMS = createTag("teleport_crystal_items");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(TeleportMod.MOD_ID, name));

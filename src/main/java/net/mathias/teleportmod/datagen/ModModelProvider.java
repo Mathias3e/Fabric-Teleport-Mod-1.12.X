@@ -22,6 +22,9 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.ENERGY_ORB, Models.GENERATED);
         itemModelGenerator.register(ModItems.TELEPORTER, Models.GENERATED);
-        itemModelGenerator.register(ModItems.TELEPORT_CRYSTAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TELEPORT_CRYSTAL_TIER_1, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TELEPORT_CRYSTAL_TIER_2, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TELEPORT_CRYSTAL_TIER_3, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TELEPORT_CRYSTAL_TIER_4, Models.GENERATED);
     }
 }

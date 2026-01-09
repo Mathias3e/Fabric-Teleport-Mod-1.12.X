@@ -11,7 +11,10 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item ENERGY_ORB = registerItem("energy_orb", new Item(new Item.Settings()));
-    public static final Item TELEPORT_CRYSTAL = registerItem("teleport_crystal", new Item(new Item.Settings()));
+    public static final Item TELEPORT_CRYSTAL_TIER_1 = registerItem("teleport_crystal_tier_1", new Item(new Item.Settings()));
+    public static final Item TELEPORT_CRYSTAL_TIER_2 = registerItem("teleport_crystal_tier_2", new Item(new Item.Settings()));
+    public static final Item TELEPORT_CRYSTAL_TIER_3 = registerItem("teleport_crystal_tier_3", new Item(new Item.Settings()));
+    public static final Item TELEPORT_CRYSTAL_TIER_4 = registerItem("teleport_crystal_tier_4", new Item(new Item.Settings()));
 
     public static final Item TELEPORTER = registerItem("teleporter", new TeleporterItem(new Item.Settings()
         .maxCount(1)
@@ -25,7 +28,10 @@ public class ModItems {
         TeleportMod.LOGGER.info("Registering Mod Items for " + TeleportMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(TELEPORT_CRYSTAL);
+            entries.add(TELEPORT_CRYSTAL_TIER_1);
+            entries.add(TELEPORT_CRYSTAL_TIER_2);
+            entries.add(TELEPORT_CRYSTAL_TIER_3);
+            entries.add(TELEPORT_CRYSTAL_TIER_4);
             // Weitere Itrems
         });
     }

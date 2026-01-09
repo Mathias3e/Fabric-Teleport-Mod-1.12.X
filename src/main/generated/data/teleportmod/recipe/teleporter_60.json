@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "K": {
+      "item": "teleportmod:teleport_crystal_tier_2"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "  N",
+    "CKC",
+    "CRC"
+  ],
+  "result": {
+    "components": {
+      "teleportmod:energy_efficiency": 60.0
+    },
+    "count": 1,
+    "id": "teleportmod:teleporter"
+  }
+}

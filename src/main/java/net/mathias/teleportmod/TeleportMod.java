@@ -3,6 +3,7 @@ package net.mathias.teleportmod;
 import net.fabricmc.api.ModInitializer;
 
 import net.mathias.teleportmod.block.ModBlocks;
+import net.mathias.teleportmod.component.ModDataComponentTypes;
 import net.mathias.teleportmod.item.ModItemGroups;
 import net.mathias.teleportmod.item.ModItems;
 import net.mathias.teleportmod.networking.ModMessages;
@@ -27,5 +28,7 @@ public class TeleportMod implements ModInitializer {
         ModMessages.registerNetworking();
 
         ModWorldGeneration.generateModWorldGen();
+
+        ModDataComponentTypes.registerDataComponentTypes();
 	}
 }

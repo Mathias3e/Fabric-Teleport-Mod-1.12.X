@@ -6,7 +6,7 @@
       "item": "minecraft:copper_ingot"
     },
     "K": {
-      "item": "teleportmod:teleport_crystal"
+      "item": "teleportmod:teleport_crystal_tier_3"
     },
     "N": {
       "item": "minecraft:netherite_ingot"
@@ -21,6 +21,9 @@
     "CRC"
   ],
   "result": {
+    "components": {
+      "teleportmod:energy_efficiency": 120.0
+    },
     "count": 1,
     "id": "teleportmod:teleporter"
   }

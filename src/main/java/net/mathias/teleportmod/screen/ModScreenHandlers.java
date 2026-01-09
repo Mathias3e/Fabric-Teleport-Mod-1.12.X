@@ -12,9 +12,7 @@ import net.minecraft.util.Identifier;
 public class ModScreenHandlers {
     public static final ScreenHandlerType<TeleporterScreenHandler> TELEPORTER_SCREEN_HANDLER =
             Registry.register(Registries.SCREEN_HANDLER,
-                    // FIX: Removed space in the ID
                     Identifier.of(TeleportMod.MOD_ID, "teleporter_screen_handler"),
-                    // This expects a constructor: (int syncId, PlayerInventory inv, ItemStack data)
                     new ExtendedScreenHandlerType<>(TeleporterScreenHandler::new, ItemStack.PACKET_CODEC));
 
     public static void registerScreenHandlers() {

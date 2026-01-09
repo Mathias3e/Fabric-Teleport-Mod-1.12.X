@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "teleportmod:teleport_crystal"
+        "recipe": "teleportmod:teleport_crystal_tier_1_crafting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "teleportmod:teleport_crystal"
+      "teleportmod:teleport_crystal_tier_1_crafting"
     ]
   }
 }

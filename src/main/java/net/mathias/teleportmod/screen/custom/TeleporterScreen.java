@@ -2,6 +2,7 @@ package net.mathias.teleportmod.screen.custom;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.mathias.teleportmod.TeleportMod;
+import net.mathias.teleportmod.component.ModDataComponentTypes;
 import net.mathias.teleportmod.item.ModItems;
 import net.mathias.teleportmod.util.ModTags;
 import net.minecraft.client.gui.DrawContext;
@@ -30,6 +31,15 @@ public class TeleporterScreen extends HandledScreen<TeleporterScreenHandler> {
         super(handler, inventory, title);
         this.backgroundWidth = 176;
         this.backgroundHeight = 68;
+    }
+
+    private float getEnergyDivisor() {
+        if (this.client == null || this.client.player == null) return 30.0f;
+        ItemStack stack = this.client.player.getMainHandStack();
+        if (!(stack.getItem() instanceof net.mathias.teleportmod.item.custom.TeleporterItem)) {
+            stack = this.client.player.getOffHandStack();
+        }
+        return stack.getOrDefault(ModDataComponentTypes.ENERGY_EFFICIENCY, 30.0f);
     }
 
     @Override
@@ -94,7 +104,10 @@ public class TeleporterScreen extends HandledScreen<TeleporterScreenHandler> {
                 double z = Double.parseDouble(parts[2]);
 
                 double dist = Math.sqrt(this.client.player.squaredDistanceTo(x, y, z));
-                double energy = dist/30;
+
+                double divisor = getEnergyDivisor();
+                double energy = dist / divisor;
+
                 int amountEnergyOrb = 0;
                 PlayerInventory inventory = this.client.player.getInventory();
 
@@ -138,7 +151,7 @@ public class TeleporterScreen extends HandledScreen<TeleporterScreenHandler> {
                 double z = Double.parseDouble(coords[2]);
 
                 double dist = Math.sqrt(this.client.player.squaredDistanceTo(x, y, z));
-                double energy = dist/30;
+                double energy = dist/30; //replace 30 with nbt value
 
                 ClientPlayNetworking.send(new TeleportPayload(x, y, z, (int) Math.round(energy)));
 

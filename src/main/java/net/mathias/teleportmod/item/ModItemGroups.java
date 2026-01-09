@@ -17,7 +17,10 @@ public class ModItemGroups {
                 .icon(() -> new ItemStack(ModItems.TELEPORTER))
                 .displayName(Text.translatable("itemgroup.teleportmod.teleport_items"))
                 .entries((displayContext, entries) -> {
-                    entries.add(ModItems.TELEPORT_CRYSTAL);
+                    entries.add(ModItems.TELEPORT_CRYSTAL_TIER_1);
+                    entries.add(ModItems.TELEPORT_CRYSTAL_TIER_2);
+                    entries.add(ModItems.TELEPORT_CRYSTAL_TIER_3);
+                    entries.add(ModItems.TELEPORT_CRYSTAL_TIER_4);
                     entries.add(ModItems.ENERGY_ORB);
                     entries.add(ModBlocks.ENERGY_ORE);
                     entries.add(ModItems.TELEPORTER);

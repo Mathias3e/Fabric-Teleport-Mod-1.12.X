@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "S": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "U": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "UUU",
+    "SES",
+    "UUU"
+  ],
+  "result": {
+    "count": 1,
+    "id": "teleportmod:teleport_crystal_tier_2"
+  }
+}

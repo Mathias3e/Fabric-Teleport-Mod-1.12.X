@@ -1,10 +1,11 @@
 {
+  "parent": "teleportmod:teleport/teleport_crystal_tier_3",
   "criteria": {
     "has_item": {
       "conditions": {
         "items": [
           {
-            "items": "teleportmod:teleport_crystal_tier_1"
+            "items": "teleportmod:teleport_crystal_tier_4"
           }
         ]
       },
@@ -12,16 +13,16 @@
     }
   },
   "display": {
-    "background": "minecraft:textures/block/netherite_block.png",
     "description": {
-      "translate": "teleportmod.advancement.root.description"
+      "translate": "teleportmod.advancement.teleport_crystal_tier_4.description"
     },
+    "frame": "goal",
     "icon": {
       "count": 1,
-      "id": "teleportmod:teleport_crystal_tier_1"
+      "id": "teleportmod:teleport_crystal_tier_4"
     },
     "title": {
-      "translate": "teleportmod.advancement.root.title"
+      "translate": "teleportmod.advancement.teleport_crystal_tier_4.title"
     }
   },
   "requirements": [

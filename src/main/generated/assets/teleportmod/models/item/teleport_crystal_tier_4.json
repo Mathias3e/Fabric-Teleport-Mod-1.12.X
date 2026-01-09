@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "teleportmod:item/teleport_crystal_tier_4"
+  }
+}

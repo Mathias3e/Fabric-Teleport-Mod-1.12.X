@@ -1,6 +1,7 @@
 package net.mathias.teleportmod.item.custom;
 
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
+import net.mathias.teleportmod.component.ModDataComponentTypes;
 import net.mathias.teleportmod.screen.custom.TeleporterScreenHandler; // Import your handler
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.component.Component;
@@ -37,6 +38,9 @@ public class TeleporterItem extends Item implements ExtendedScreenHandlerFactory
 
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+        float efficiency = stack.getOrDefault(ModDataComponentTypes.ENERGY_EFFICIENCY, 30.0f);
+        int efficiencyDisplay = (int) efficiency;
+
         if(Screen.hasShiftDown()) {
             tooltip.add(Text.translatable("tooltip.teleportmod.teleporter.shift_down.line1"));
             tooltip.add(Text.translatable("tooltip.teleportmod.teleporter.shift_down.line2"));
@@ -44,8 +48,7 @@ public class TeleporterItem extends Item implements ExtendedScreenHandlerFactory
             tooltip.add(Text.translatable("tooltip.teleportmod.teleporter.shift_down.line4"));
             tooltip.add(Text.translatable("tooltip.teleportmod.teleporter.shift_down.line5"));
             tooltip.add(Text.translatable("tooltip.teleportmod.teleporter.shift_down.line6"));
-            tooltip.add(Text.translatable("tooltip.teleportmod.teleporter.shift_down.line7"));
-
+            tooltip.add(Text.translatable("tooltip.teleportmod.teleporter.shift_down.line7", efficiencyDisplay));
         } else {
             tooltip.add(Text.translatable("tooltip.teleportmod.teleporter"));
         }

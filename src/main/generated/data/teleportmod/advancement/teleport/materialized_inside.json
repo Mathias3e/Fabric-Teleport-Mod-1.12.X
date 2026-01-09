@@ -1,5 +1,5 @@
 {
-  "parent": "teleportmod:teleport/root",
+  "parent": "teleportmod:teleport/teleporter",
   "criteria": {
     "materialized_inside": {
       "trigger": "minecraft:impossible"
@@ -12,7 +12,7 @@
     "frame": "goal",
     "icon": {
       "count": 1,
-      "id": "teleportmod:teleport_crystal"
+      "id": "teleportmod:teleporter"
     },
     "title": {
       "translate": "teleportmod.advancement.materialized_inside.title"

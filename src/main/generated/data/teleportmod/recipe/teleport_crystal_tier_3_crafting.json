@@ -7,13 +7,18 @@
     },
     "S": {
       "item": "minecraft:amethyst_shard"
+    },
+    "U": {
+      "item": "minecraft:diamond"
     }
   },
   "pattern": [
-    "SES"
+    "UUU",
+    "SES",
+    "UUU"
   ],
   "result": {
     "count": 1,
-    "id": "teleportmod:teleport_crystal"
+    "id": "teleportmod:teleport_crystal_tier_3"
   }
 }
