@@ -9,7 +9,7 @@
 	],
 	"contact": {
         "homepage": "https://fabricmc.net/",
-        "sources": "https://github.com/Mathias3e/Fabric_Teleport_Mod_1.20X"
+        "sources": "https://github.com/Mathias3e/Fabric-Teleport-Mod-1.12.X"
 	},
 	"license": "MIT",
 	"icon": "assets/teleportmod/icon.png",
