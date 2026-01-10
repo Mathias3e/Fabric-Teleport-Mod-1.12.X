@@ -29,7 +29,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         SmithingTransformRecipeJsonBuilder.create(
                         Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
                         Ingredient.ofItems(ModItems.TELEPORT_CRYSTAL_TIER_1),
-                        Ingredient.ofItems(Items.NETHERITE_INGOT),
+                        Ingredient.ofItems(Items.IRON_INGOT),
                         RecipeCategory.MISC,
                         ModItems.TELEPORT_CRYSTAL_TIER_2
                 )
@@ -39,7 +39,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         SmithingTransformRecipeJsonBuilder.create(
                         Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
                         Ingredient.ofItems(ModItems.TELEPORT_CRYSTAL_TIER_2),
-                        Ingredient.ofItems(Items.NETHERITE_INGOT),
+                        Ingredient.ofItems(Items.DIAMOND),
                         RecipeCategory.MISC,
                         ModItems.TELEPORT_CRYSTAL_TIER_3
                 )

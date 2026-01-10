@@ -3,8 +3,11 @@ package net.mathias.teleportmod.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.mathias.teleportmod.TeleportMod;
 import net.mathias.teleportmod.block.ModBlocks;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.NbtComponent;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -23,7 +26,13 @@ public class ModItemGroups {
                     entries.add(ModItems.TELEPORT_CRYSTAL_TIER_4);
                     entries.add(ModItems.ENERGY_ORB);
                     entries.add(ModBlocks.ENERGY_ORE);
-                    entries.add(ModItems.TELEPORTER);
+
+                    ItemStack teleporterStack = new ItemStack(ModItems.TELEPORTER);
+                    NbtCompound nbt = new NbtCompound();
+                    nbt.putFloat("block_amount_per_one_energy_orb", 30.0f);
+                    teleporterStack.set(DataComponentTypes.CUSTOM_DATA, NbtComponent.of(nbt));
+
+                    entries.add(teleporterStack);
                 }).build());
 
     public static void registerItemGroups() {
