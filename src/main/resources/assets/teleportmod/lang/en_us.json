@@ -15,7 +15,11 @@
   "gui.teleportmod.teleporter.name": "Teleporter",
   "gui.teleportmod.teleporter.coords.placeholder": "Coords:",
   "gui.teleportmod.teleporter.coords.name": "Coords",
-  "gui.teleportmod.teleporter.button.text": "Teleport",
+  "gui.teleportmod.teleporter.tp_button.text": "Teleport",
+  "gui.teleportmod.teleporter.dimension_button.text": "Dimension",
+  "gui.teleportmod.teleporter.dimension_button.text_overworld": "Overworld",
+  "gui.teleportmod.teleporter.dimension_button.text_the_nether": "The Nether",
+  "gui.teleportmod.teleporter.dimension_button.text_the_end": "The End",
 
   "gui.teleportmod.teleporter.info.dist.empty": "Needs X, Y, Z",
   "gui.teleportmod.teleporter.info.energy.empty": "Energy:",

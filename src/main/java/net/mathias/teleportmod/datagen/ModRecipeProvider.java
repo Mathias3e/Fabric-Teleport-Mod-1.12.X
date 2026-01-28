@@ -150,7 +150,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter, Identifier.of("teleportmod", "teleporter_120"));
 
         NbtShapedRecipeBuilder.create(RecipeCategory.MISC, teleporterItem)
-                .component(ModDataComponentTypes.BLOCK_AMOUNT_PER_ONE_ENERGY_ORB, 240.0f)
+                .component(ModDataComponentTypes.BLOCK_AMOUNT_PER_ONE_ENERGY_ORB, 120.0f)
                 .pattern("  N")
                 .pattern("CKC")
                 .pattern("CRC")

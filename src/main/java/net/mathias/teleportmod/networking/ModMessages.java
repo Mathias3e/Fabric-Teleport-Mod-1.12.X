@@ -2,18 +2,22 @@ package net.mathias.teleportmod.networking;
 
 import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
+import net.mathias.teleportmod.screen.custom.Dimension;
 import net.mathias.teleportmod.util.ModTags;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.damage.DamageType;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.advancement.AdvancementEntry;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 
 public class ModMessages {
 
@@ -32,7 +36,22 @@ public class ModMessages {
                 Identifier materialized_inside_id = Identifier.of("teleportmod", "teleport/materialized_inside");
 
                 BlockPos targetPos = new BlockPos((int) payload.x(), (int) payload.y(), (int) payload.z());
-                var world = player.getServerWorld();
+                MinecraftServer server = player.getServer();
+                ServerWorld world = null;
+                switch (payload.dimension()) {
+                    case OVERWORLD:
+                        world = server.getWorld(World.OVERWORLD);
+                        break;
+                    case NETHER:
+                        world = server.getWorld(World.NETHER);
+                        break;
+                    case END:
+                        world = server.getWorld(World.END);
+                        break;
+                    default:
+                        world = server.getWorld(World.OVERWORLD);
+                        break;
+                }
 
                 BlockState stateFeet = world.getBlockState(targetPos);
                 BlockState stateHead = world.getBlockState(targetPos.up());
@@ -46,7 +65,7 @@ public class ModMessages {
                         player.getInventory()
                 );
                 player.teleport(
-                        player.getServerWorld(),
+                        world,
                         payload.x() + 0.5,
                         payload.y(),
                         payload.z() + 0.5,
