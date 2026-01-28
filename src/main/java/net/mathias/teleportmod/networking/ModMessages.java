@@ -34,6 +34,7 @@ public class ModMessages {
                 ServerPlayerEntity player = context.player();
                 Identifier first_teleport_id = Identifier.of("teleportmod", "teleport/first_teleport");
                 Identifier materialized_inside_id = Identifier.of("teleportmod", "teleport/materialized_inside");
+                Identifier traveled_through_spacetime_continuum_id = Identifier.of("teleportmod", "teleport/traveled_through_spacetime_continuum");
 
                 BlockPos targetPos = new BlockPos((int) payload.x(), (int) payload.y(), (int) payload.z());
                 MinecraftServer server = player.getServer();
@@ -82,6 +83,14 @@ public class ModMessages {
                     AdvancementEntry entry = player.getServer().getAdvancementLoader().get(first_teleport_id);
                     if (entry != null) {
                         player.getAdvancementTracker().grantCriterion(entry, "first_teleport");
+                    }
+                }
+                if (player.getWorld().getRegistryKey() != world.getRegistryKey()) {
+                    if (player.getServer() != null) {
+                        AdvancementEntry entry = player.getServer().getAdvancementLoader().get(traveled_through_spacetime_continuum_id);
+                        if (entry != null) {
+                            player.getAdvancementTracker().grantCriterion(entry, "traveled_through_spacetime_continuum");
+                        }
                     }
                 }
                 if (isObstructed) {

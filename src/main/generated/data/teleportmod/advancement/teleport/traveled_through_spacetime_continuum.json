@@ -1,0 +1,27 @@
+{
+  "parent": "teleportmod:teleport/first_teleport",
+  "criteria": {
+    "traveled_through_spacetime_continuum": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "teleportmod.advancement.traveled_through_spacetime_continuum.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:ender_eye"
+    },
+    "title": {
+      "translate": "teleportmod.advancement.traveled_through_spacetime_continuum.title"
+    }
+  },
+  "requirements": [
+    [
+      "traveled_through_spacetime_continuum"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

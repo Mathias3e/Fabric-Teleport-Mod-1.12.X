@@ -3,6 +3,7 @@ package net.mathias.teleportmod.util;
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.mathias.teleportmod.item.ModItems;
 import net.minecraft.loot.LootPool;
+import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
@@ -17,9 +18,9 @@ public class ModLootTableModifiers {
             if (END_CITY_TREASURE_ID.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(UniformLootNumberProvider.create(1f, 1f))
-                        .with(ItemEntry.builder(ModItems.TELEPORT_CRYSTAL_TIER_2)
-                                .weight(5)
-                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)))
+                        .with(ItemEntry.builder(ModItems.TELEPORT_CRYSTAL_TIER_3)
+                                .conditionally(RandomChanceLootCondition.builder(0.20f))
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)))
                         );
                 tableBuilder.pool(poolBuilder);
             }

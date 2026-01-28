@@ -1,4 +1,4 @@
-// 1.21	2026-01-09T23:12:13.6169896	Teleport Mod/Recipes
+// 1.21	2026-01-28T12:16:29.6854113	Teleport Mod/Recipes
 322919eacdfd9c2a8e0ddaebc9cdea2e64713b2a data\teleportmod\advancement\recipes\misc\teleporter_60.json
 ed5ac92596a3d8bb204e4cb399482629c8660a25 data\teleportmod\advancement\recipes\misc\teleport_crystal_tier_4_crafting.json
 7d297107bcf83be9cfb5d001eee9b87520350d88 data\teleportmod\advancement\recipes\misc\teleport_crystal_tier_3_crafting.json
@@ -8,8 +8,8 @@ d9a09d092933870a424c6676069aa151c4401971 data\teleportmod\advancement\recipes\mi
 83730684cefd4ccd29ecd9e7fa289a3270b0a2f8 data\teleportmod\advancement\recipes\misc\teleport_crystal_tier_3_smithing.json
 bd65d567f49650ffe9468e6e64bc95bad3f54248 data\teleportmod\advancement\recipes\misc\teleporter_30.json
 6f50a2bac0836a4c342858d70134a36306a32626 data\teleportmod\recipe\teleport_crystal_tier_4_smithing.json
-74e1526db7f1e5784fce3c5c04635c5b36c23cae data\teleportmod\recipe\teleporter_240.json
 fb99a0640c065b9db1d1c635fc36ff5ecb28ef05 data\teleportmod\advancement\recipes\misc\teleporter_120.json
+c386ccc9b49ab25e7d2d58c563d1e2ce6c35c26a data\teleportmod\recipe\teleporter_240.json
 926683a712d3d8e7aef37bff5f2fe4dd1522d119 data\teleportmod\recipe\teleporter_60.json
 d9c2da36c3eb110a51b5d0c10089445b92a20d25 data\teleportmod\recipe\teleport_crystal_tier_1_crafting.json
 817d0bbb8a25c6db60b18d8779dbc8900a528781 data\teleportmod\recipe\teleport_crystal_tier_4_crafting.json

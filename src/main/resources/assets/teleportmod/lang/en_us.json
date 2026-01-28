@@ -54,6 +54,8 @@
   "teleportmod.advancement.first_teleport.description": "Use a Teleporter to teleport for the first time",
   "teleportmod.advancement.materialized_inside.title": "Teleporting Problem",
   "teleportmod.advancement.materialized_inside.description": "Materialise inside a wall",
+  "teleportmod.advancement.traveled_through_spacetime_continuum.title": "Dimensional Rift",
+  "teleportmod.advancement.traveled_through_spacetime_continuum.description": "Teleport yourself to another dimension",
 
   "tag.item.teleportmod.energy_scours_items": "Energy Source",
   "tag.item.teleportmod.teleport_crystal_items": "Teleport Crystals",

@@ -27,7 +27,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         //addDrop(ModBlocks.ENERGY_ORE, oreDrops(ModBlocks.ENERGY_ORE, ModItems.ENERGY_ORB));
-        addDrop(ModBlocks.ENERGY_ORE, multipleOreDrops(ModBlocks.ENERGY_ORE, ModItems.ENERGY_ORB, 2, 5));
+        addDrop(ModBlocks.ENERGY_ORE, multipleOreDrops(ModBlocks.ENERGY_ORE, ModItems.ENERGY_ORB, 2, 3));
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {

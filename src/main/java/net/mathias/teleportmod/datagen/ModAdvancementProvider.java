@@ -10,6 +10,7 @@ import net.minecraft.advancement.AdvancementFrame;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.advancement.criterion.ImpossibleCriterion;
 import net.minecraft.advancement.criterion.InventoryChangedCriterion;
+import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
@@ -121,12 +122,27 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
                         Text.translatable("teleportmod.advancement.materialized_inside.title"),
                         Text.translatable("teleportmod.advancement.materialized_inside.description"),
                         null,
-                        AdvancementFrame.GOAL,
+                        AdvancementFrame.CHALLENGE,
                         true,
                         true,
                         false
                 )
                 .criterion("materialized_inside", Criteria.IMPOSSIBLE.create(new ImpossibleCriterion.Conditions()))
                 .build(consumer, TeleportMod.MOD_ID + ":teleport/materialized_inside");
+
+        AdvancementEntry traveledThroughSpacetimeContinuum = Advancement.Builder.create()
+                .parent(firstTeleport)
+                .display(
+                        Items.ENDER_EYE,
+                        Text.translatable("teleportmod.advancement.traveled_through_spacetime_continuum.title"),
+                        Text.translatable("teleportmod.advancement.traveled_through_spacetime_continuum.description"),
+                        null,
+                        AdvancementFrame.GOAL,
+                        true,
+                        true,
+                        false
+                )
+                .criterion("traveled_through_spacetime_continuum", Criteria.IMPOSSIBLE.create(new ImpossibleCriterion.Conditions()))
+                .build(consumer, TeleportMod.MOD_ID + ":teleport/traveled_through_spacetime_continuum");
     }
 }

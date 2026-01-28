@@ -23,7 +23,7 @@ public class ModPlacedFeatures {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, NETHER_ENERGY_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_ENERGY_ORE),
-                ModOrePlacement.modifiersWithCount(10, HeightRangePlacementModifier.uniform(YOffset.aboveBottom(10), YOffset.belowTop(10))));
+                ModOrePlacement.modifiersWithCount(7, HeightRangePlacementModifier.uniform(YOffset.aboveBottom(10), YOffset.belowTop(10))));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

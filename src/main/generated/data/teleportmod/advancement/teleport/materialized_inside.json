@@ -9,7 +9,7 @@
     "description": {
       "translate": "teleportmod.advancement.materialized_inside.description"
     },
-    "frame": "goal",
+    "frame": "challenge",
     "icon": {
       "count": 1,
       "id": "teleportmod:teleporter"

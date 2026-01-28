@@ -22,7 +22,7 @@
   ],
   "result": {
     "components": {
-      "teleportmod:block_amount_per_one_energy_orb": 240.0
+      "teleportmod:block_amount_per_one_energy_orb": 120.0
     },
     "count": 1,
     "id": "teleportmod:teleporter"
